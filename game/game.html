@@ -14,13 +14,8 @@
          <!-- import the webpage's stylesheet -->
         <link rel="stylesheet" href="/style.css">
          <!-- import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
-    <style> 
-       
-    </style>
-    <script>
-        
-     </script>
+    <script src="/game.js" defer></script>
+    
   </head>
 <body>
      <div class="navbar">
@@ -34,34 +29,66 @@
       <a href="">About Me</a>
     <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Enter a keyword">
   </div>
-  <ul id="myUL">
-      <li><a href="eggs.html">Bacon Cheddar Deviled Eggs</a></li>
-  </ul>
+  
   <script>
-    function myFunction() {
-      var input, filter, ul, li, a, i, txtValue;
-      input = document.getElementById("myInput");
-      filter = input.value.toUpperCase();
-      ul = document.getElementById("myUL");
-      li = ul.getElementsByTagName('li');
-
-      if(input.value.length == 0){
-        ul.style.display = "none";
-      return;
-      }else{
-        ul.style.display = "block";
-      }
-      // Loop through all list items, and hide those who don't match the search query
-      for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-          li[i].style.display = "block";
-        } else {
-          li[i].style.display = "none";
-        }
-      }
-    }
+    
   </script>
+<div style = "margin: auto; vertical-align: middle; horizontal-align: middle">
+      
+    <header>
+      <h1>
+        Good Health and Well-being
+      </h1>
+    </header>
 
+    <main>
+      
+      <form>
+        <ul id = "">
+        <p id = "q"> QUESTION HERE</p>
+      </ul>
+      </form>
+      
+      <section>
+        <ul id="">
+        <button id="a1" type = "submit" >
+          ANSWER 1
+        </button>
+        </ul>
+      </section>
+      
+      <section>
+        <ul id="">
+        <button id="a2">
+          ANSWER 2
+        </button>
+        </ul>
+      </section>
+      
+      <section>
+        <ul id="">
+        <button id="a3">
+          ANSWER 3
+        </button>
+        </ul>
+      </section>
+      
+     <section>
+        <ul id="">
+        <button id="a4">
+          ANSWER 4
+        </button>
+          </ul>
+      </section>
+
+      
+    </main>
+    
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/public/client.js"></script>
+    </div>
 </body>
 </html>

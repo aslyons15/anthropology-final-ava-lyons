@@ -76,3 +76,70 @@
           margin-top: 30px;
           height: 1500px; /* Used in this example to enable scrolling */
         }
+
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #ffc0cb;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: pink;
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 3px;
+}
+
+button {
+  font-size: 15px;
+  width: 500px;
+  border-radius: 4px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px pink;
+  cursor: pointer;
+}
+
+/*button:hover {
+  background-color: pink;
+}
+*/
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+ul {
+  padding-inline-start: unset;
+}
