@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="/style.css">
+         <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <style> 
+       
+    </style>
+    <script>
+        
+     </script>
+  </head>
+<body>
+    <div class="navbar">
+      <img src="h.jpg" alt="logo" style="width:130px ; height:125px">
+      <a href="index.html">Home</a>
+      <a href="">Unit 1</a>
+      <a href="">Unit 2</a>
+      <a href="">Unit 3</a>
+      <a href="">Unit 4</a>
+      <a href="">Unit 5</a>
+      <a href="">About Me</a>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Enter a keyword">
+  </div>
+  <ul id="myUL">
+      <li><a href="eggs.html">Bacon Cheddar Deviled Eggs</a></li>
+  </ul>
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      if(input.value.length == 0){
+        ul.style.display = "none";
+      return;
+      }else{
+        ul.style.display = "block";
+      }
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "block";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
