@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Home</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <!-- import the webpage's stylesheet -->
+      <link rel="stylesheet" href="/style.css">
+     <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script> 
+    
+  </head>
+<body>
+    <div class="navbar">
+      <img src="h.jpg" alt="logo" style="width:130px ; height:125px">
+      <a href="index.html">Home</a>
+      <a href="Unit_1.html">Unit 1</a>
+      <a href="">Unit 2</a>
+      <a href="">Unit 3</a>
+      <a href="">Unit 4</a>
+      <a href="">Dino Game</a>
+      <a href="">About Me</a>
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search.." title="Enter a keyword">
+  </div>
+  <ul id="myUL">
+      <li><a href="eggs.html">Bacon Cheddar Deviled Eggs</a></li>
+  </ul>
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+
+      if(input.value.length == 0){
+        ul.style.display = "none";
+      return;
+      }else{
+        ul.style.display = "block";
+      }
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "block";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+  <div class="bs-example">
+      <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+          <!-- Carousel indicators -->
+          <ol class="carousel-indicators">
+              <li class="slide-one active"></li>
+              <li class="slide-two"></li>
+              <li class="slide-three"></li>
+              <li class="slide-four"></li>
+              <li class="slide-five"></li>
+              <li class="slide-six"></li>
+              <li class="slide-seven"></li>
+              <li class="slide-eight"></li>
+              <li class="slide-nine"></li>
+              <li class="slide-ten"></li>
+          </ol>
+          <!-- Wrapper for carousel items -->
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <a href=""><img src="" alt="First Slide" style="width:450px ; height:400px"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Unit 1 Picture</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <a href=""><img src="" alt="Second Slide" style="width:450px ; height:400px"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Unit 2 picture</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <a href=""><img src="" alt="Third Slide" style="width:450px ; height:400px"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Unit 3 Picture</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <a href=""><img src="" alt="Fourth Slide" style="width:450px ; height:400px"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Unit 4 Picture</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <a href=""><img src="" alt="Fifth Slide" style="width:450px ; height:400px"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Unit 5 Picture</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <a href="jalapenos.html"><img src="jalapenos.jpg" alt="Sixth Slide" style="width:450px ; height:400px"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Unit 6 Picture</h3>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <a href=""><img src="" alt="Seventh Slide" style="width:450px ; height:400px"></a>
+                  <div class="carousel-caption d-none d-md-block">
+                      <h3>Hominoid Pic</h3>
+                </div>
+              </div>
+          </div>
+          <!-- Carousel controls -->
+          <a class="carousel-control-prev">
+              <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next">
+              <span class="carousel-control-next-icon"></span>
+          </a>
+      </div>
+  </div>
+</body>
+</html>

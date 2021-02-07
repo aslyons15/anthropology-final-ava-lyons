@@ -1,0 +1,78 @@
+* {
+        box-sizing: border-box;
+        }
+
+        #myInput {
+          background-image: url('/css/searchicon.png');
+          background-position: 10px 12px;
+          background-repeat: no-repeat;
+          width: 25%;
+          font-size: 16px;
+          padding: 12px 20px 12px 40px;
+          border: 1px solid #ddd;
+          margin-bottom: 12px;
+        }
+        #myUL li{
+          display:none;
+        }
+        #myUL {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+        }
+
+        #myUL li a {
+          border: 1px solid #ddd;
+          margin-top: -1px; /* Prevent double borders */
+          background-color: #f6f6f6;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px;
+          color: black;
+          display: block
+        }
+
+        #myUL li a:hover:not(.header) {
+          background-color: #eee;
+        }
+        .carousel{
+            background: #2f4357;
+            margin-top: 40px;
+        }
+        .carousel-item{
+            text-align: center;
+            min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+        }
+        .bs-example{
+          margin: 190px;
+        }
+        .carousel-indicators li, .carousel a{
+            cursor: pointer;
+        }
+        body {margin:0;}
+        .navbar {
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index:1; /*Add this*/
+        }
+        .navbar a {
+          float: left;
+          display: block;
+          color: #f2f2f2;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        .navbar a:hover {
+          background: #ddd;
+          color: black;
+        }
+        .main {
+          padding: 16px;
+          margin-top: 30px;
+          height: 1500px; /* Used in this example to enable scrolling */
+        }
